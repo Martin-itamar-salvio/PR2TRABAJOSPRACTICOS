@@ -1,0 +1,69 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLFrame</id><coordinates><x>252</x><y>639</y><w>441</w><h>207</h></coordinates><panel_attributes>LOOP
+
+
+
+[i &lt; items.size()]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>333</x><y>567</y><w>90</w><h>27</h></coordinates><panel_attributes>_Factura_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>585</y><w>27</w><h>108</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>459</x><y>558</y><w>162</w><h>27</h></coordinates><panel_attributes>_itemFactura_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>576</y><w>27</w><h>117</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>657</y><w>162</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+calcularImporte()</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>522</x><y>675</y><w>18</w><h>90</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>594</x><y>603</y><w>90</w><h>27</h></coordinates><panel_attributes>_Producto_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>621</x><y>720</y><w>18</w><h>72</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>621</x><y>621</y><w>27</w><h>117</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>702</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+getImporte()</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>774</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+importeUnitario</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>369</x><y>675</y><w>18</w><h>72</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>801</y><w>162</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+importeTotalItem</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>513</x><y>783</y><w>27</w><h>36</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>756</y><w>27</w><h>45</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>738</y><w>27</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>369</x><y>810</y><w>18</w><h>27</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>810</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>621</x><y>783</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>837</y><w>27</w><h>144</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>135</y><w>207</w><h>126</h></coordinates><panel_attributes>Comprobante de Venta
+--
+-tipoComprobante:char
+-numeroComprobante:int
+-importeTotal:double
+_-tipoComprobanteFactura:static char_
+--
++CalcularMontoTotal():double
+-esFactura():char</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>135</y><w>171</w><h>108</h></coordinates><panel_attributes>Fecha
+--
+-dia:int
+-mes:int
+-anio:int
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>153</y><w>90</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-fecha</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>603</x><y>306</y><w>171</w><h>108</h></coordinates><panel_attributes>Producto
+--
+-importe:double
+-cant:int
+
+
+--
++calcularTotal():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>252</y><w>153</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-productosVendidos</panel_attributes><additional_attributes>40;60;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>792</y><w>279</w><h>54</h></coordinates><panel_attributes>lt=&lt;-
+calcularImporteFinal(importeUnitario)</panel_attributes><additional_attributes>10;30;80;40;80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>801</y><w>216</w><h>54</h></coordinates><panel_attributes>lt=&lt;-
+sumatoriaItems += importeTotalItem</panel_attributes><additional_attributes>130;40;10;40;10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>594</y><w>189</w><h>54</h></coordinates><panel_attributes>CalculadorImpuestos
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>639</y><w>27</w><h>405</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;430</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>783</x><y>855</y><w>18</w><h>90</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>558</y><w>27</w><h>423</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;450</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>153</x><y>612</y><w>18</w><h>27</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>594</y><w>234</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+calcularTotal()</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>855</y><w>432</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+calcular(sumatoriaItems)</panel_attributes><additional_attributes>460;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>927</y><w>648</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+totalFacturaConImpuestos</panel_attributes><additional_attributes>10;20;700;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>81</x><y>261</y><w>126</w><h>63</h></coordinates><panel_attributes>e01
+
+clase cliente Faltante
+tipoComprobante puede ser enum
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>27</x><y>684</y><w>126</w><h>63</h></coordinates><panel_attributes>Ds E02
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>135</x><y>504</y><w>54</w><h>99</h></coordinates><panel_attributes>Actor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>405</x><y>0</y><w>162</w><h>81</h></coordinates><panel_attributes>Cliente
+--
+-nroCliente:String
+-dniCliente:String
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>72</y><w>63</w><h>81</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-cliente</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>63</y><w>171</w><h>54</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+tipoComprobante
+--
+_+Factura_
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>108</y><w>153</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+-tipoComprobante</panel_attributes><additional_attributes>40;10;40;90;150;90</additional_attributes></element></diagram>
