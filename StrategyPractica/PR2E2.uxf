@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>0</y><w>248</w><h>176</h></coordinates><panel_attributes>/Empleado/
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>280</x><y>62</y><w>216</w><h>136</h></coordinates><panel_attributes>/Empleado/
 --
 -sueldoBrutoAnual:double
 -sueldoEfectivo:double
@@ -10,47 +10,47 @@
 /+calcularSalario():double/
 +getSalarioBruto():double
 +getDiaIngreso():int
-+getCantHijos():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>128</x><y>520</y><w>152</w><h>24</h></coordinates><panel_attributes>Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>536</y><w>24</w><h>496</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;600</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>160</x><y>576</y><w>16</w><h>80</h></coordinates><panel_attributes>
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>568</y><w>160</w><h>48</h></coordinates><panel_attributes>lt=&lt;-
-calcularSalario()</panel_attributes><additional_attributes>10;40;90;40;90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>632</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
--calcularBono()</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>8</y><w>208</w><h>96</h></coordinates><panel_attributes>/Categoria/
++getCantHijos():int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>216</x><y>582</y><w>152</w><h>24</h></coordinates><panel_attributes>Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>598</y><w>24</w><h>496</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;600</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>248</x><y>638</y><w>16</w><h>80</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>630</y><w>160</w><h>48</h></coordinates><panel_attributes>lt=&lt;-
+calcularSalario()</panel_attributes><additional_attributes>10;40;90;40;90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>694</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+-calcularBono()</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>70</y><w>208</w><h>96</h></coordinates><panel_attributes>/Categoria/
 --
 
 
 
 --
 /+calcularBono():double/
--salarioValido():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>232</y><w>112</w><h>112</h></coordinates><panel_attributes>CategoriaA
+-salarioValido():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>294</y><w>112</w><h>112</h></coordinates><panel_attributes>CategoriaA
 --
 _-MIN_DIA_INGRESO:final int = 1_
 _-MAX_DIA_INGRESO:final int = 31_
 
 --
 -diaIngresoValido(int):boolean
-+calcularBono():</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>232</y><w>104</w><h>112</h></coordinates><panel_attributes>CategoriaB
++calcularBono():</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>294</y><w>104</w><h>112</h></coordinates><panel_attributes>CategoriaB
 --
 
 
 
 --
 -cantHijosValida(int):boolean
-+calcularBono()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>232</y><w>128</w><h>104</h></coordinates><panel_attributes>CategoriaC
++calcularBono()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>888</x><y>294</y><w>128</w><h>104</h></coordinates><panel_attributes>CategoriaC
 --
 _-VALOR_BONO:final int = 500_
 --
 
-+calcularBono():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>656</x><y>96</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>96</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>96</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>24</y><w>248</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
++calcularBono():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>744</x><y>158</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>816</x><y>158</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>158</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>86</y><w>248</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
--categoriaEmpleado</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>480</x><y>520</y><w>80</w><h>24</h></coordinates><panel_attributes>CategoriaB</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>512</x><y>536</y><w>24</w><h>376</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;450</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>512</x><y>648</y><w>16</w><h>40</h></coordinates><panel_attributes>
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>160</x><y>680</y><w>16</w><h>24</h></coordinates><panel_attributes>
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>664</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
-getCantHijos()</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>688</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
-CantHijos</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>512</x><y>792</y><w>16</w><h>40</h></coordinates><panel_attributes>
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>160</x><y>792</y><w>16</w><h>80</h></coordinates><panel_attributes>
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>776</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
-valorBono</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>712</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
-getSalarioBruto()</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>728</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
-SalarioBruto</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>816</y><w>72</w><h>72</h></coordinates><panel_attributes>lt=&lt;.
-valorSaario</panel_attributes><additional_attributes>60;70;10;70;10;10;60;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>512</x><y>704</y><w>32</w><h>40</h></coordinates><panel_attributes>
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>152</x><y>724</y><w>24</w><h>32</h></coordinates><panel_attributes>
+-categoriaEmpleado</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>568</x><y>582</y><w>80</w><h>24</h></coordinates><panel_attributes>CategoriaB</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>598</y><w>24</w><h>376</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;450</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>600</x><y>710</y><w>16</w><h>40</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>248</x><y>742</y><w>16</w><h>24</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>726</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+getCantHijos()</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>750</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+CantHijos</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>600</x><y>854</y><w>16</w><h>40</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>248</x><y>854</y><w>16</w><h>80</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>838</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+valorBono</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>774</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+getSalarioBruto()</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>790</y><w>360</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+SalarioBruto</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>878</y><w>72</w><h>72</h></coordinates><panel_attributes>lt=&lt;.
+valorSaario</panel_attributes><additional_attributes>60;70;10;70;10;10;60;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>600</x><y>766</y><w>32</w><h>40</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>240</x><y>786</y><w>24</w><h>32</h></coordinates><panel_attributes>
 bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
