@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>136</x><y>472</y><w>152</w><h>96</h></coordinates><panel_attributes>Mapeador
+--
+
+
+
+--
++getDireccion(x,y):String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>208</y><w>232</w><h>128</h></coordinates><panel_attributes>BingMaps
+--
+
+
+--
++obtenerDireccion(decimal,decimal):String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>784</x><y>432</y><w>232</w><h>120</h></coordinates><panel_attributes>GoogleMaps
+--
+
+
+
+
+
+--
++getAdress(double,double):String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>440</y><w>232</w><h>120</h></coordinates><panel_attributes>Adapter
+--
+
+
+
+--
++Adapter(GoogleMaps) Adapter
+-convertirADouble(decimal):double
++obtenerDireccion(decimal,decimal): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>536</x><y>328</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>240</y><w>272</w><h>248</h></coordinates><panel_attributes>lt=&lt;-
+dataService</panel_attributes><additional_attributes>320;20;20;20;20;290</additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>440</y><w>128</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+apiGoogleMaps</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>472</x><y>608</y><w>184</w><h>72</h></coordinates><panel_attributes>obtenerDireccion llama
+
+a convertirADouble internamente
+por cada valor</panel_attributes><additional_attributes></additional_attributes></element></diagram>
